@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+    <head>
+        <meta charset="utf-8" content="text/html" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="{{url_for('static', filename='assets/css/quest_style.css')}}" rel="stylesheet">
+        <link href="{{url_for('static', filename='assets/css/quest5_bg.css')}}" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <script src="{{url_for('static', filename='assets/js/script.js')}}"></script>
+        <title> Quest5 </title>
+    </head> 
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__logo">Квест</div>
+                    <nav class="nav">
+                        <a class="nav__link" href="/">Домой</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        
+        <main class="main">
+            <div class="container">
+                <div class="main__inner">
+                    <h2 class="task__title">Решите задание и введите пароль чтобы продолжить путешествиие</h2>
+                    <h3 class="task__inner">Портал успешно восстановлен и вы выдвинулись в путь. Попав на Землю 9 вы замечаете странную фигуру у портала. Как только незнакомец вас заметил он поспешно скрылся в портале бросив что-то  в блок управления. Портал закрылся до того как вы успели до него добежать. Решив разузнать, что случилось с порталом вы находите логи портала, но они зашифрованы. Возможно, в них будет содержаться информация, куда злодей мог отправиться. Для того ,чтобы найти незнакомца допишите системное заклинание.</h3>
+                    <img src="{{url_for('static', filename='assets/images/test/test5.png')}}" alt="" class="task__image">
+                    <input class="search" type="text" value="" placeholder="Объект.Действие()">
+                    <h4 class="task__exp">[пароль может содержать цифры, а также буквы русского и английского алфавита]</h4>
+                    <a class="btn" href="" id="check">Проверить</a>
+                    <script src="{{url_for('static', filename='assets/js/search.js')}}"></script>
+                </div>
+            </div>
+        </main>
+    </body> 
+</html>

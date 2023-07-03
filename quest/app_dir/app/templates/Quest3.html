@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+    <head>
+        <meta charset="utf-8" content="text/html" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="{{url_for('static', filename='assets/css/quest_style.css')}}" rel="stylesheet">
+        <link href="{{url_for('static', filename='assets/css/quest3_bg.css')}}" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <script src="{{url_for('static', filename='assets/js/script.js')}}"></script>
+        <title> Quest3 </title>
+    </head> 
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__logo">Квест</div>
+                    <nav class="nav">
+                        <a class="nav__link" href="/">Домой</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        
+        <main class="main">
+            <div class="container">
+                <div class="main__inner">
+                    <h2 class="task__title">Решите задание и введите пароль чтобы продолжить путешествиие</h2>
+                    <h3 class="task__inner">Второй портал был успешно восстановлен! Но это только начало! Вы шагнули в следующий портал и попали на Землю 17. Как и ожидалось, портал также разрушен. Видимо кто-то специально выводит из строя порталы. Осмотревшись вы видите, что питающие элементы были отключены. Необходимо восстановить подачу энергии для портала дописав системное заклинание.</h3>
+                    <img src="{{url_for('static', filename='assets/images/test/test3.png')}}" alt="" class="task__image">
+                    <input class="search" type="text" value="" placeholder="Объект.Действие()">
+                    <h4 class="task__exp">[пароль может содержать цифры, а также буквы русского и английского алфавита]</h4>
+                    <a class="btn" href="" id="check">Проверить</a>
+                    <script src="{{url_for('static', filename='assets/js/search.js')}}"></script>
+                </div>
+            </div>
+        </main>
+    </body> 
+</html>

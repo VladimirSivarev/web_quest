@@ -1,0 +1,3 @@
+web: gunicorn setup:app
+init: pybabel compile -d app/translations
+upgrade: pybabel compile -d app/translations

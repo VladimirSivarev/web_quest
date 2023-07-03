@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+    <head>
+        <meta charset="utf-8" content="text/html" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="{{url_for('static', filename='assets/css/quest_style.css')}}" rel="stylesheet">
+        <link href="{{url_for('static', filename='assets/css/quest2_bg.css')}}" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <script src="{{url_for('static', filename='assets/js/script.js')}}"></script>
+        <title> Quest2 </title>
+    </head> 
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__logo">Квест</div>
+                    <nav class="nav">
+                        <a class="nav__link" href="/">Домой</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        
+        <main class="main">
+            <div class="container">
+                <div class="main__inner">
+                    <h2 class="task__title">Решите задание и введите пароль чтобы продолжить путешествиие</h2>
+                    <h3 class="task__inner">При дешифровке портала в его коде вы находите отрывок в котором указано место следующего отключения. Не задумываясь вы входите в портал и попадаете на землю 616. Осмотрев врата вы заметили, что преобразователь материи отсутствует. немного поискав вы находите его в траве. Видимо кто-то специально его вытащил! Кто же это мог быть? Необходимо установить преобразователь в портал дописав системное заклинание.</h3>
+                    <img src="{{url_for('static', filename='assets/images/test/test2.png')}}" alt="" class="task__image">
+                    <input class="search" type="text" placeholder="Объект.Действие()">
+                    <h4 class="task__exp">[пароль может содержать цифры, а также буквы русского и английского алфавита]</h4>
+                    <a class="btn" href="" id="check">Проверить</a>
+                    <script src="{{url_for('static', filename='assets/js/search.js')}}"></script>
+                </div>
+            </div>
+        </main>
+    </body> 
+</html>
